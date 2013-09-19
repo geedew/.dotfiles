@@ -1,0 +1,33 @@
+[ui]
+username = Drew Wilson <drew@geedew.com>
+merge = vimdiff
+
+[paths]
+wo = ssh://hg@bitbucket.org/sproutsocial/weborigin/
+lwo = ~/Documents/srv/SproutSocial/code/weborigin/
+wd = ssh://hg@bitbucket.org/sproutsocial/weborigin-drew/
+lwd = ~/Documents/srv/SproutSocial/code/drew
+we = ssh://hg@bitbucket.org/sproutsocial/weborigin-experimental/
+
+[extensions]
+churn=
+mq=
+transplant=
+hgext.bookmarks =
+hggit = 
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.premerge = keep
+vimdiff.priority = 1
+#vimdiff.args = -d $base $local -o $output $other +close +close
+vimdiff.args = -d -c "wincmd J" $output $local $other 
+
+[pager]
+pager = less -FXR
+
+[hooks]
+
+preoutgoing.validate = ~/Documents/usr/scripts/sproutsocial/hooks/outgoing.validate.sh
+#([-f grunt/config.js] && [[-f Gruntfile.js]] && ( ssh root@live.sproutsocial.com "(cd /mnt/sproutsocial/$(basename $(dirname $(pwd) ) )/$(basename $(pwd) );grunt validate)" ) ) || true
+#preoutgoing.validate = ([[-f build.xml]] && ( ssh root@live.sproutsocial.com "(cd /mnt/sproutsocial/$(basename $(dirname $(pwd) ) )/$(basename $(pwd) );phing validate)" ) ) || true
