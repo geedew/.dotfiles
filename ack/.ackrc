@@ -1,0 +1,4 @@
+--ignore-dir=dist/
+--ignore-dir=js/.templates/
+--ignore-dir=.hoganizeswap/
+--ignore-dir=js/.language/

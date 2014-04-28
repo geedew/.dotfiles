@@ -81,3 +81,21 @@ export ACKRC=".ackrc"
 bindkey -e
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
+
+# Gardenbox Environment Variables
+export SPROUT_DEV_USER=drew
+export SPROUT_PATH_SETUP=/Volumes/SproutSocial/Gardenbox/Setup/
+export SPROUT_PATH_CODE=/Volumes/SproutSocial/SproutSocial/
+export SPROUT_PATH_MACHETE=code/machete/
+export SPROUT_PATH_SITE=code/web-site-core/
+export SPROUT_PATH_APP=code/drew/
+# End
+
+# Gardenbox Environment Variables
+export SPROUT_DEV_USER=drew
+export SPROUT_PATH_SETUP=/Volumes/SproutSocial/Gardenbox/Setup/
+export SPROUT_PATH_CODE=/Volumes/SproutSocial/SproutSocial/
+export SPROUT_PATH_MACHETE=code/machete/
+export SPROUT_PATH_SITE=code/web-site-core/
+export SPROUT_PATH_APP=code/web-app-core/
+# End
