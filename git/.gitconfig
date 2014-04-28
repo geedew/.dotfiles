@@ -25,3 +25,5 @@
 	qf = !git commit -am"Fix" && git rebase -i HEAD~2
 [hub]
 	protocol = ssh
+[init]
+	templatedir = ~/.git-templates
